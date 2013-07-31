@@ -24,6 +24,8 @@ simple project that will take care of:
 - all errors are handled
 - works with socket.io-client & websockets
 
+supports nodejs 0.8 - 0.10 (not 11)
+
 ## Usage
 
 Intended use is like this (not 100% accurate code now)
