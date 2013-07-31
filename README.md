@@ -35,6 +35,8 @@ Intended use is like this (not 100% accurate code now)
 
 Now you can extend it by adding your routes or socket handlers to both socialExpress & socialSocketio
 
+emits events 'error','started','stopped'
+
 ## Future/Todo
 
 - integrate with cluster
