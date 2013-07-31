@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+  - "0.8"
+notifications:
+  irc: "chat.freenode.net#socialapp"
+before_script:
+  - npm install -g grunt-cli
