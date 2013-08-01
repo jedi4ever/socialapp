@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       },
       lib: {
         files: {
-          src: ['lib/**/*.js','bin/bashpack']
+          src: ['lib/**/*.js']
         },
         options: {
           node: true,
@@ -60,9 +60,7 @@ module.exports = function(grunt) {
           reporter: 'list',
           require: 'coverage/blanket'
         },
-        //src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/merge.js']
-        src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/users.js' , 'test/merge.js']
-        //src: ['test/**/*.js']
+        src: ['test/**/*.js']
       },
       coverage: {
         options: {
@@ -70,8 +68,7 @@ module.exports = function(grunt) {
           // use the quiet flag to suppress the mocha console output
           quiet: true
         },
-        src: ['test/socialapp.js'],
-        //src: ['test/**/*.js'],
+        src: ['test/**/*.js'],
         // specify a destination file to capture the mocha
         // output (the quiet option does not suppress this)
         dest: 'coverage.html'
