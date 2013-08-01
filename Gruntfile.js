@@ -60,8 +60,8 @@ module.exports = function(grunt) {
           reporter: 'list',
           require: 'coverage/blanket'
         },
-        src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/merge.js']
-        //src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/users.js' , 'test/merge.js']
+        //src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/merge.js']
+        src: ['test/socialapp.js', 'test/socialapp_lb.js','test/keys.js' , 'test/users.js' , 'test/merge.js']
         //src: ['test/**/*.js']
       },
       coverage: {
