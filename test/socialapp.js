@@ -57,6 +57,11 @@ describe('Let us say Hello', function() {
 
   beforeEach(function(done) {
     socialApp = new SocialApp(testConfig);
+    socialApp.on('error', function(err) {
+      console.log('do we error?');
+      return done(err);
+    });
+
     expressApp = socialApp.express;
     socketioApp = socialApp.socketio;
     done();
