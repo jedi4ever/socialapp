@@ -61,10 +61,11 @@ describe('Let us say Hello', function() {
       console.log('do we error?');
       return done(err);
     });
-    socialApp.start();
-    expressApp = socialApp.express;
-    socketioApp = socialApp.socketio;
-    done();
+    socialApp.start(function(err) {
+      expressApp = socialApp.express;
+      socketioApp = socialApp.socketio;
+      done();
+    });
   });
 
   afterEach(function(done) {

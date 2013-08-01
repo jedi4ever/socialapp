@@ -57,9 +57,11 @@ describe('Let us say Hello via LB', function() {
 
   beforeEach(function(done) {
     socialApp = new SocialApp(lbConfig);
-    expressApp = socialApp.express;
-    socketioApp = socialApp.socketio;
-    done();
+    socialApp.start(function(err,app) {
+      expressApp = app.express;
+      socketioApp = app.socketio;
+      done();
+    });
   });
 
   afterEach(function(done) {
