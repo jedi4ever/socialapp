@@ -13,7 +13,7 @@ var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 var passportStub = require('passport-stub-js');
 
 // Helper frameworks
-var merge = require('../lib/utils/merge');
+var merge = require('hashmerge');
 var util = require('util');
 var path = require('path');
 
